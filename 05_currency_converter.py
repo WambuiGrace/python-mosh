@@ -2,6 +2,7 @@
 Ask user for a valid amount if invalid print error message
 Ask user for source of currency if invalid print error message
 Ask user for target currency if invalid print error message
+#Format to 2 decimal places :.2f
 """
 exchange_rate = {
     'USD': 1.0, 'EUR': 0.85, 'GBP': 0.75, 'INR': 74.0, 'AUD': 1.35, 'CAD': 1.25, 
@@ -34,4 +35,4 @@ while True:
         break
 
 converted_amount = amount * exchange_rate[source_currency] / exchange_rate[target_currency]
-print(f'{amount} {source_currency} is equal to {converted_amount:.2f} {target_currency}')
+print(f'{amount} {source_currency} is equal to {converted_amount:.2f} {target_currency}') 
